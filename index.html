@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Learning | Premium Education & Enrichment Center in Dubai</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luna: {
+                            50: '#f4f7fc',
+                            100: '#e8f0fe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        },
+                        accent: {
+                            warm: '#fef3c7',
+                            coral: '#fb7185',
+                            mint: '#d1fae5',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.92) 0%, rgba(37, 99, 235, 0.85) 100%), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+                <span class="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg">🌙</span>
+                Luna Learning <span class="text-xs uppercase bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-sans tracking-wide">Dubai</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide">
+                <a href="#about" class="hover:text-blue-600 transition">About Us</a>
+                <a href="#programs" class="hover:text-blue-600 transition">Programs</a>
+                <a href="#reviews" class="hover:text-blue-600 transition">Testimonials</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact & Location</a>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="tel:+971525639002" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl text-xs uppercase tracking-wider font-semibold transition flex items-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-phone"></i> +971 52 563 9002
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-2xl text-slate-800 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" class="block text-sm uppercase tracking-wide font-medium hover:text-blue-600">About Us</a>
+            <a href="#programs" class="block text-sm uppercase tracking-wide font-medium hover:text-blue-600">Programs</a>
+            <a href="#reviews" class="block text-sm uppercase tracking-wide font-medium hover:text-blue-600">Testimonials</a>
+            <a href="#contact" class="block text-sm uppercase tracking-wide font-medium hover:text-blue-600">Contact & Location</a>
+            <a href="tel:+971525639002" class="block text-center bg-blue-600 text-white py-3 rounded-xl text-xs uppercase tracking-wider font-semibold">Call +971 52 563 9002</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center text-center px-6 pt-20">
+        <div class="max-w-3xl mx-auto text-white" data-aos="fade-up" data-aos-duration="1000">
+            <span class="text-xs uppercase tracking-[0.25em] bg-blue-500/80 px-4 py-1.5 mb-6 inline-block rounded-full backdrop-blur-sm font-semibold">Cityland Mall • Beside Global Village, Dubai</span>
+            <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                Nurturing Curiosity & Inspiring Young Minds
+            </h1>
+            <p class="text-base md:text-xl font-light text-slate-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                A warm, safe, and professional learning center offering Montessori foundation, robotics workshops, creative art, and specialized youth courses in Dubai.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#programs" class="w-full sm:w-auto bg-white text-blue-900 hover:bg-slate-100 px-8 py-4 rounded-xl text-xs uppercase tracking-[0.15em] font-bold transition shadow-lg">
+                    Explore Programs
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-blue-700/50 hover:bg-blue-700/80 border border-white/30 backdrop-blur-md text-white px-8 py-4 rounded-xl text-xs uppercase tracking-[0.15em] font-semibold transition">
+                    Visit Center
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div data-aos="fade-right">
+                <span class="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold block mb-3">Welcome to Luna Learning</span>
+                <h2 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-snug">
+                    Building Confidence, Creativity & Character
+                </h2>
+                <p class="text-slate-600 font-light leading-relaxed mb-6">
+                    Conveniently located at **Cityland Mall, Wadi Al Safa 4, Dubai**, Luna Learning is dedicated to providing an encouraging and positive environment. Our qualified educators focus on individual student growth, ensuring every child develops critical thinking, confidence, and a lifelong love for learning.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-200">
+                    <div>
+                        <h3 class="font-heading text-3xl font-bold text-blue-600 mb-1">4.7 ★</h3>
+                        <p class="text-xs uppercase tracking-wider text-slate-500 font-medium">Parent Rating</p>
+                    </div>
+                    <div>
+                        <h3 class="font-heading text-3xl font-bold text-blue-600 mb-1">100%</h3>
+                        <p class="text-xs uppercase tracking-wider text-slate-500 font-medium">Dedicated Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Classroom Learning" class="w-full h-72 object-cover rounded-2xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Kids Workshop" class="w-full h-72 object-cover rounded-2xl shadow-lg mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Workshops -->
+    <section id="programs" class="py-24 bg-blue-50/50 px-6 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold block mb-2">Our Offerings</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900">Enrichment Programs & Courses</h2>
+                <p class="text-slate-600 text-sm mt-3">Designed to foster creativity, technical skills, and foundational growth.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Program 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">🧸</div>
+                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Montessori Program</h3>
+                        <p class="text-slate-600 text-sm font-light leading-relaxed mb-6">
+                            Structured foundational learning that encourages independence, sensory development, and cognitive progress for early learners.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-xs uppercase tracking-widest font-bold text-blue-600 hover:text-blue-700 flex items-center gap-2">
+                        Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">🤖</div>
+                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Robotics Workshops</h3>
+                        <p class="text-slate-600 text-sm font-light leading-relaxed mb-6">
+                            Hands-on STEM and coding workshops designed to spark engineering curiosity and logical problem-solving in children.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-xs uppercase tracking-widest font-bold text-blue-600 hover:text-blue-700 flex items-center gap-2">
+                        Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">🎨</div>
+                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Creative Art Classes</h3>
+                        <p class="text-slate-600 text-sm font-light leading-relaxed mb-6">
+                            Expressive art sessions encouraging imagination, color exploration, and fine motor skills through various artistic mediums.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-xs uppercase tracking-widest font-bold text-blue-600 hover:text-blue-700 flex items-center gap-2">
+                        Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">🧵</div>
+                        <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Specialized Sewing Course</h3>
+                        <p class="text-slate-600 text-sm font-light leading-relaxed mb-6">
+                            Engaging multi-week craft and sewing courses led by expert instructors like Ms. Nazra, teaching valuable hands-on techniques.
+                        </p>
+                    </div>
+                    <a href="#contact" class="text-xs uppercase tracking-widest font-bold text-blue-600 hover:text-blue-700 flex items-center gap-2">
+                        Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Reviews Section -->
+    <section id="reviews" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+            <span class="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold block mb-2">Parent Feedback</span>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900">Trusted by Dubai Families</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Review 1 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-amber-400 text-sm mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 text-sm font-light leading-relaxed mb-6 italic">
+                    "I enrolled both my daughters to the 4 week sewing course. My daughters thoroughly enjoyed every class and I was impressed to see everything they made. Ms Nazra is an amazing teacher and my daughters learnt so many valuable techniques. Highly recommend!!"
+                </p>
+                <h4 class="font-heading font-bold text-slate-900">Nuralain Tariq</h4>
+                <span class="text-xs text-slate-400">Verified Parent</span>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-amber-400 text-sm mb-4 space-x-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 text-sm font-light leading-relaxed mb-6 italic">
+                    "I am beyond happy with Luna Learning! My daughter absolutely loves going there and looks forward to every session. The teachers are highly qualified, patient, and truly dedicated to helping each student succeed. Huge improvement in confidence and creativity!"
+                </p>
+                <h4 class="font-heading font-bold text-slate-900">Mohammed Hassan Ahmed</h4>
+                <span class="text-xs text-slate-400">Verified Parent</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit & Contact Section -->
+    <section id="contact" class="py-24 bg-slate-100 px-6 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="text-xs uppercase tracking-[0.2em] text-blue-600 font-bold block mb-3">Get in Touch</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-slate-900 mb-6">Visit Our Center in Dubai</h2>
+                <div class="space-y-6 text-slate-600">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-900 text-base">Location</h4>
+                            <p class="text-sm font-light">Cityland Mall (beside Global Village), Wadi Al Safa 4, Dubai, UAE</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center shrink-0 mt-1 shadow-sm">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-900 text-base">Phone & WhatsApp</h4>
+                            <p class="text-sm font-light"><a href="tel:+971525639002" class="hover:text-blue-600 transition">+971 52 563 9002</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-slate-200" data-aos="fade-left">
+                <h3 class="font-heading text-2xl font-bold mb-6 text-slate-900">Program Enquiry</h3>
+                <form onsubmit="event.preventDefault(); alert('Thank you! Your enquiry has been sent to Luna Learning Dubai.');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-600 mb-2 font-semibold">Parent's Name</label>
+                        <input type="text" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-600 mb-2 font-semibold">Phone Number / WhatsApp</label>
+                        <input type="text" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-600 mb-2 font-semibold">Interested Program</label>
+                        <select class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 transition">
+                            <option>Montessori Program</option>
+                            <option>Robotics Workshops</option>
+                            <option>Creative Art Classes</option>
+                            <option>Specialized Sewing Course</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-600 mb-2 font-semibold">Message / Child's Age</label>
+                        <textarea rows="3" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-600 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl text-xs uppercase tracking-[0.15em] font-bold transition shadow-md">
+                        Submit Enquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="font-heading text-xl tracking-wide text-white flex items-center gap-2">
+                <span>🌙</span> Luna Learning <span class="text-blue-500 text-sm block font-sans font-light">Dubai, UAE</span>
+            </div>
+            <p class="text-xs text-slate-400 font-light tracking-wide">
+                © 2026 Luna Learning Center. All rights reserved. Located at Cityland Mall.
+            </p>
+            <div class="flex space-x-6 text-lg">
+                <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
